@@ -675,4 +675,8 @@ section {
   text-align: center;
   font-size: 0.75rem;
   color: oklch(from var(--foreground) l c h / 0.55);
+
+   .photo--comic {
+    aspect-ratio: 2 / 3;
+}
 }
