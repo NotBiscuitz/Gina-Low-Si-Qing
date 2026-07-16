@@ -6,7 +6,7 @@
     <title>EAE Portfolio · Gina Low</title>
     <meta
       name="description"
-      content="Gina Low's Early Admissions Exercise portfolio for Singapore Polytechnic — Optometry and Hotel & Leisure Facilities Management pathways."
+      content="Gina Low's Early Admissions Exercise portfolio for Singapore Polytechnic — Optometry and Hotel &amp; Leisure Facilities Management pathways."
     />
     <meta property="og:title" content="EAE Portfolio · Gina Low" />
     <meta
@@ -138,15 +138,16 @@
       </defs>
     </svg>
 
+  </head>
+
+  <body>
     <!-- Dreamy pastel mesh background -->
     <div class="bg-mesh" aria-hidden="true">
       <div class="blob blob--pink"></div>
       <div class="blob blob--lavender"></div>
       <div class="blob blob--mint"></div>
     </div>
-  </head>
 
-  <body>
     <!-- ============ Sticky nav ============ -->
     <header class="nav-wrap">
       <nav class="nav glass-card sheen" aria-label="Primary">
@@ -229,7 +230,7 @@
               </span>
               <div>
                 <p class="pathway-card__eyebrow">Target · NP / SP</p>
-                <h3 class="pathway-card__title">Healthcare & Optometry</h3>
+                <h3 class="pathway-card__title">Healthcare &amp; Optometry</h3>
               </div>
             </div>
 
@@ -252,10 +253,16 @@
               </li>
             </ul>
 
-            <div class="pathway-card__cta pathway-card__cta--pink">
+            <button
+              class="pathway-card__cta pathway-card__cta--pink modal-trigger"
+              type="button"
+              data-modal="optometry-modal"
+              aria-haspopup="dialog"
+              aria-controls="optometry-modal"
+            >
               Explore optometry
               <svg class="icon"><use href="#i-arrow-right" /></svg>
-            </div>
+            </button>
           </article>
 
           <!-- Hospitality -->
@@ -267,7 +274,7 @@
               <div>
                 <p class="pathway-card__eyebrow">Target · NP HLFM</p>
                 <h3 class="pathway-card__title">
-                  Hotel & Leisure Facilities Management
+                  Hotel &amp; Leisure Facilities Management
                 </h3>
               </div>
             </div>
@@ -291,10 +298,16 @@
               </li>
             </ul>
 
-            <div class="pathway-card__cta pathway-card__cta--lavender">
+            <button
+              class="pathway-card__cta pathway-card__cta--lavender modal-trigger"
+              type="button"
+              data-modal="hospitality-modal"
+              aria-haspopup="dialog"
+              aria-controls="hospitality-modal"
+            >
               Explore hospitality
               <svg class="icon"><use href="#i-arrow-right" /></svg>
-            </div>
+            </button>
           </article>
         </div>
       </section>
@@ -328,7 +341,7 @@
               <svg class="icon icon-md"><use href="#i-users" /></svg>
             </span>
             <div>
-              <h3>Drills & Team Synergy</h3>
+              <h3>Drills &amp; Team Synergy</h3>
               <p>
                 Ran weekly drills, coordinating my patrol through precise
                 sequences and reinforcing trust within the unit.
@@ -341,7 +354,7 @@
               <svg class="icon icon-md"><use href="#i-shield" /></svg>
             </span>
             <div>
-              <h3>Discipline & Accountability</h3>
+              <h3>Discipline &amp; Accountability</h3>
               <p>
                 Held the patrol to a high standard of uniform, punctuality, and
                 follow-through — modelling it myself first.
@@ -354,7 +367,7 @@
               <svg class="icon icon-md"><use href="#i-medal" /></svg>
             </span>
             <div>
-              <h3>Resilience & Communication</h3>
+              <h3>Resilience &amp; Communication</h3>
               <p>
                 Built thick skin through repetition and feedback, and learned to
                 communicate calmly across age groups. 
@@ -362,37 +375,40 @@
             </div>
           </li>
 
-    <li class="glass-card sheen interactive cca-card cca-card--center">
-  <span class="tile tile--lavender tile--lg">
-    <svg class="icon icon-md"><use href="#i-sparkles" /></svg>
-  </span>
-
-  <div>
-    <h3>My CCA mates!</h3>
-
-    <p>
-      Throughout my four years in Girl Guides, I built meaningful friendships
-      with my CCA mates through teamwork, mutual support and shared experiences.
-      We encouraged one another during training and challenges, celebrated each
-      other's achievements, and always looked out for one another. These
-      experiences strengthened my communication, empathy, and ability to work
-      effectively as part of a team.
-    </p>
-
-    <div class="ach-card__media">
-      <div class="photo photo--portrait">
-        <div class="photo__inner">
-          <img src="image4.jpg" alt="Girl Guides">
-        </div>
-      </div>
-    </div>
-  </div>
-</li>
+          <li class="glass-card sheen interactive cca-card cca-card--feature">
+            <div class="cca-card__content">
+              <div class="cca-card__feature-heading">
+                <span class="tile tile--lavender tile--lg">
+                  <svg class="icon icon-md"><use href="#i-sparkles" /></svg>
+                </span>
+                <h3>CCA</h3>
+              </div>
+              <p>
+                Throughout four years in Girl Guides, I built meaningful
+                friendships through teamwork, mutual support, and shared
+                experiences. We encouraged one another during training and
+                challenges, celebrated achievements, and always looked out for
+                one another. These experiences strengthened my communication,
+                empathy, and ability to work effectively as part of a team.
+              </p>
+            </div>
+            <figure class="cca-card__media photo">
+              <img
+                class="photo__image"
+                src="image4.jpg"
+                alt="Gina with her Girl Guides CCA group"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </li>
+        </ol>
+      </section>
 
       <!-- ============ Achievements ============ -->
       <section id="achievements" class="container container--wide">
         <div class="section-head">
-          <h2 class="section-head__title">Achievements & Experience</h2>
+          <h2 class="section-head__title">Achievements &amp; Experience</h2>
           <p class="section-head__lead">
             A scannable look at the moments that shaped how I work and lead.
           </p>
@@ -416,42 +432,54 @@
               through shared common interests with the children. Developed immense
               adaptability and cross-cultural empathy.
             </p>
-            <div class="ach-card__media">
-              <div class="photo photo--portrait">
-                <div class="photo__inner">
-                  </span>
-                 <img src="ce40655e-23ae-4139-a22e-40b2eaf2a2fa.jpg" alt="Thailand">
-                </div>
-              </div>
-            </div>
+            <button
+              class="ach-card__media photo modal-trigger"
+              type="button"
+              data-modal="thailand-photo-modal"
+              aria-haspopup="dialog"
+              aria-controls="thailand-photo-modal"
+              aria-label="View the full Thailand school exchange photo"
+            >
+              <img
+                class="photo__image"
+                src="ce40655e-23ae-4139-a22e-40b2eaf2a2fa.jpg"
+                alt="Thailand school exchange"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
           </article>
 
-         <!-- Archery -->
-<article class="glass-card sheen interactive ach-card">
-  <div class="ach-card__head">
-    <span class="tile tile--pink">
-      <svg class="icon icon-md">
-        <use href="#i-target"></use>
-      </svg>
-    </span>
-    <span class="ach-card__tag">Champion · 1st Place</span>
-  </div>
-
-  <h3 class="ach-card__title">School Archery Event</h3>
-
-  <p class="ach-card__text">
-    Finished in 1st Place. Demonstrates high focus, steady composure
-    under pressure, and strict self-discipline.
-  </p>
-
-  <div class="ach-card__media">
-    <div class="photo photo--portrait">
-      <div class="photo__inner">
-        <img src="image.jpg" alt="Italian Trulli">
-      </div>
-    </div>
-  </div>
-</article>
+          <!-- Archery -->
+          <article class="glass-card sheen interactive ach-card">
+            <div class="ach-card__head">
+              <span class="tile tile--pink">
+                <svg class="icon icon-md"><use href="#i-target" /></svg>
+              </span>
+              <span class="ach-card__tag">Champion · 1st Place</span>
+            </div>
+            <h3 class="ach-card__title">School Archery Event</h3>
+            <p class="ach-card__text">
+              Finished in 1st Place. Demonstrates high focus, steady composure
+              under pressure, and strict self-discipline.
+            </p>
+            <button
+              class="ach-card__media photo modal-trigger"
+              type="button"
+              data-modal="archery-photo-modal"
+              aria-haspopup="dialog"
+              aria-controls="archery-photo-modal"
+              aria-label="View the full archery event photo"
+            >
+              <img
+                class="photo__image"
+                src="image.jpg"
+                alt="Archery event"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </article>
 
           <!-- Boggle -->
           <article class="glass-card sheen interactive ach-card">
@@ -466,14 +494,22 @@
               Achieved 2nd place in a high-speed cognitive challenge. Showcases
               rapid problem-solving, mental agility, and critical thinking.
             </p>
-            <div class="ach-card__media">
-              <div class="photo photo--portrait">
-                <div class="photo__inner">
-                  </span>
-                 <img src="image2.jpg" alt="Italian Trulli">
-                </div>
-              </div>
-            </div>
+            <button
+              class="ach-card__media photo modal-trigger"
+              type="button"
+              data-modal="boggle-photo-modal"
+              aria-haspopup="dialog"
+              aria-controls="boggle-photo-modal"
+              aria-label="View the full Sports Challenge Boggle photo"
+            >
+              <img
+                class="photo__image"
+                src="image2.jpg"
+                alt="Sports Challenge 2024 Boggle achievement"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
           </article>
 
           <!-- Comic -->
@@ -490,14 +526,22 @@
               Demonstrates out-of-the-box thinking, design execution, and
               alignment with global community values.
             </p>
-            <div class="ach-card__media">
-              <div class="photo photo--portrait">
-                <div class="photo__inner"
-                  </span>
-                  <img src="image3.jpg" alt="Italian Trulli">
-                </div>
-              </div>
-            </div>
+            <button
+              class="ach-card__media photo modal-trigger"
+              type="button"
+              data-modal="comic-photo-modal"
+              aria-haspopup="dialog"
+              aria-controls="comic-photo-modal"
+              aria-label="View the full World Thinking Day comic design"
+            >
+              <img
+                class="photo__image photo__image--contain"
+                src="image3.jpg"
+                alt="World Thinking Day comic design"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
           </article>
 
           <!-- OBS -->
@@ -514,13 +558,22 @@
               endurance, mental resilience, and ability to lead and cooperate in
               unfamiliar environments.
             </p>
-            <div class="ach-card__media">
-              <div class="photo photo--portrait">
-                <div class="photo__inner">
-                  <img src="image1.jpg" alt="Italian Trulli">
-                </div>
-              </div>
-            </div>
+            <button
+              class="ach-card__media photo modal-trigger"
+              type="button"
+              data-modal="obs-photo-modal"
+              aria-haspopup="dialog"
+              aria-controls="obs-photo-modal"
+              aria-label="View the full Outward Bound Singapore photo"
+            >
+              <img
+                class="photo__image"
+                src="image1.jpg"
+                alt="Outward Bound Singapore course"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
           </article>
 
           <!-- Edusave -->
@@ -535,17 +588,129 @@
             <p class="ach-card__text">
               Awarded for academic consistency and good conduct. Reflects personal
               discipline and sustained effort in my educational journey.
-            <img src="IMG_8123.jpg" alt="Italian Trulli">
-            <div class="quote-block">
-              <p>"Consistency. Conduct. Character."</p>
-            </div>
+            </p>
+            <button
+              class="ach-card__media photo modal-trigger"
+              type="button"
+              data-modal="edusave-photo-modal"
+              aria-haspopup="dialog"
+              aria-controls="edusave-photo-modal"
+              aria-label="View the full Edusave Merit Bursary certificate"
+            >
+              <img
+                class="photo__image"
+                src="IMG_8123.jpg"
+                alt="Edusave Merit Bursary certificate"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
           </article>
         </div>
       </section>
     </main>
 
+    <!-- ============ Dialogs ============ -->
+    <dialog class="modal" id="optometry-modal" aria-labelledby="optometry-modal-title">
+      <form method="dialog">
+        <button class="modal__close" type="submit" aria-label="Close dialog">×</button>
+      </form>
+      <div class="modal__content">
+        <p class="modal__eyebrow">Optometry</p>
+        <h2 id="optometry-modal-title">The Impact I Hope to Make</h2>
+        <p>
+          I hope to become an optician who not only provides accurate vision care
+          but also makes every patient feel comfortable, understood, and
+          confident. What motivates me is the opportunity to improve someone's
+          everyday life through meaningful interactions and quality care. I
+          believe this journey will also help me grow personally by becoming more
+          patient, empathetic, confident, and adaptable, allowing me to build
+          stronger connections with the people I meet.
+        </p>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="hospitality-modal" aria-labelledby="hospitality-modal-title">
+      <form method="dialog">
+        <button class="modal__close" type="submit" aria-label="Close dialog">×</button>
+      </form>
+      <div class="modal__content">
+        <p class="modal__eyebrow">Hospitality</p>
+        <h2 id="hospitality-modal-title">The Experience I Hope to Create</h2>
+        <p>
+          I hope to become a hospitality professional who creates welcoming
+          experiences and leaves a positive impression on every guest. I am
+          motivated by the opportunity to connect with people, solve problems,
+          and contribute to an environment where others feel valued and cared
+          for. I believe this journey will help me become a more confident,
+          resilient, and open-minded individual while strengthening my ability to
+          communicate, collaborate, and adapt in different situations.
+        </p>
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--photo" id="thailand-photo-modal" aria-labelledby="thailand-photo-modal-title">
+      <form method="dialog"><button class="modal__close" type="submit" aria-label="Close full photo">×</button></form>
+      <div class="modal__photo-content">
+        <h2 id="thailand-photo-modal-title" class="sr-only">Thailand school exchange photo</h2>
+        <img class="modal__image" src="ce40655e-23ae-4139-a22e-40b2eaf2a2fa.jpg" alt="Thailand school exchange" />
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--photo" id="archery-photo-modal" aria-labelledby="archery-photo-modal-title">
+      <form method="dialog"><button class="modal__close" type="submit" aria-label="Close full photo">×</button></form>
+      <div class="modal__photo-content">
+        <h2 id="archery-photo-modal-title" class="sr-only">Archery event photo</h2>
+        <img class="modal__image" src="image.jpg" alt="Archery event" />
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--photo" id="boggle-photo-modal" aria-labelledby="boggle-photo-modal-title">
+      <form method="dialog"><button class="modal__close" type="submit" aria-label="Close full photo">×</button></form>
+      <div class="modal__photo-content">
+        <h2 id="boggle-photo-modal-title" class="sr-only">Sports Challenge Boggle photo</h2>
+        <img class="modal__image" src="image2.jpg" alt="Sports Challenge 2024 Boggle achievement" />
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--photo" id="comic-photo-modal" aria-labelledby="comic-photo-modal-title">
+      <form method="dialog"><button class="modal__close" type="submit" aria-label="Close full photo">×</button></form>
+      <div class="modal__photo-content">
+        <h2 id="comic-photo-modal-title" class="sr-only">World Thinking Day comic design</h2>
+        <img class="modal__image" src="image3.jpg" alt="World Thinking Day comic design" />
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--photo" id="obs-photo-modal" aria-labelledby="obs-photo-modal-title">
+      <form method="dialog"><button class="modal__close" type="submit" aria-label="Close full photo">×</button></form>
+      <div class="modal__photo-content">
+        <h2 id="obs-photo-modal-title" class="sr-only">Outward Bound Singapore photo</h2>
+        <img class="modal__image" src="image1.jpg" alt="Outward Bound Singapore course" />
+      </div>
+    </dialog>
+
+    <dialog class="modal modal--photo" id="edusave-photo-modal" aria-labelledby="edusave-photo-modal-title">
+      <form method="dialog"><button class="modal__close" type="submit" aria-label="Close full photo">×</button></form>
+      <div class="modal__photo-content">
+        <h2 id="edusave-photo-modal-title" class="sr-only">Edusave Merit Bursary certificate</h2>
+        <img class="modal__image" src="IMG_8123.jpg" alt="Edusave Merit Bursary certificate" />
+      </div>
+    </dialog>
+
     <footer class="site-footer">
       © 2026 Gina Low · Built for EAE submission
     </footer>
+
+    <script>
+      document.querySelectorAll(".modal-trigger").forEach((trigger) => {
+        const dialog = document.getElementById(trigger.dataset.modal);
+
+        if (!dialog) return;
+
+        trigger.addEventListener("click", () => {
+          if (!dialog.open) dialog.showModal();
+        });
+      });
+    </script>
   </body>
 </html>
