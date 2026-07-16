@@ -679,10 +679,13 @@ section {
    .photo--comic {
     aspect-ratio: 2 / 3;
 
-      .cca-card--full {
-  grid-column: 1 / -1;
-  max-width: 550px;
-  margin: 0 auto;
+ .cca-card--full{
+    grid-column: 1 / -1;
+    justify-self: center;
+ }
+      .cca-card--full{
+    grid-column: span 2;
+    max-width: 500px;
+    margin: 0 auto;
 }
-}
-}
+
