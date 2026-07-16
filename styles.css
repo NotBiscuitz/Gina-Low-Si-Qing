@@ -521,7 +521,15 @@ section {
 }
 
 @media (min-width: 640px) {
-  .cca__grid { grid-template-columns: 1fr 1fr; }
+  .cca__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cca-card--center {
+    grid-column: 1 / 3;
+    width: 50%;
+    justify-self: center;
+  }
 }
 
 .cca-card {
@@ -529,24 +537,6 @@ section {
   gap: 1rem;
   padding: 1.5rem;
   height: 100%;
-}
-
-.cca-card .tile {
-  height: 2.75rem;
-  width: 2.75rem;
-  border-radius: 1rem;
-}
-
-.cca-card h3 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.cca-card p {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: oklch(from var(--foreground) l c h / 0.7);
 }
 
 /* ---------- Achievements grid ---------- */
